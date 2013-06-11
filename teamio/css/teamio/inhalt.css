@@ -1,0 +1,231 @@
+@CHARSET "UTF-8";
+
+/*
+|--------------------------------------------------------------------------
+| Imports
+|--------------------------------------------------------------------------
+*/
+
+/* fonts*/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+/* css files */ 
+@import url('../bootstrap/bootstrap.min.css');
+@import url('../bootstrap/bootstrap-responsive.min.css');
+
+
+/*
+|--------------------------------------------------------------------------
+| Global definitions
+|--------------------------------------------------------------------------
+*/
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    font-family: Lato, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	color: #000;
+	background: #F2F2F2;
+}
+
+a{
+    color: #971E38;
+    text-decoration: none;
+    transition: color .4s;
+}
+
+a:hover{
+    color: #671427;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.title1{
+    font-family: Lobster;
+    font-size: 2.28571428571429em; /* 32px / 14px */
+    text-transform: lowercase;
+    display: block;
+    color: #7E0C33;
+}
+
+.title2{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 1.71428571428571em /* 24px / 14px */;
+    display: block;
+    color: #000;
+}
+
+.title3{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 1.28571428571429em; /* 18px / 14px */
+    display: block;
+	color: #000;
+}
+
+.container{
+	position: relative;
+    padding: 0 10px;
+    margin: 0 auto;    
+}
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Elements
+|--------------------------------------------------------------------------
+*/
+
+.navbar{
+    margin: 0;
+}
+
+.navbar .nav{
+    float: right;
+    margin-right: 0;
+}
+
+.navbar a.title{
+    display: block;
+    float: left;
+    left: 0;
+    margin: 0 10px 0 0;
+    position: relative;
+    font-family: Lobster;
+    font-size: 3.14285714285714em; /* 44px / 14px */
+	color: #7E0C33;
+	/* font color gradient - webkit only */
+	background: -webkit-linear-gradient(#FFD02E, #FFCB15);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height: 44px;
+	padding-bottom: 6px;
+}
+
+.navbar-inverse .navbar-inner {
+	background-image:-moz-linear-gradient(rgb(51,51,51) 0%,rgb(41,41,41) 47%,rgb(33,33,33) 100%); 
+	background-image:-webkit-gradient(linear,color-stop(0, rgb(51,51,51)),color-stop(0.47, rgb(41,41,41)),color-stop(1, rgb(33,33,33)));
+	background-image:-webkit-linear-gradient(rgb(51,51,51) 0%,rgb(41,41,41) 47%,rgb(33,33,33) 100%);
+	background-image:-o-linear-gradient(rgb(51,51,51) 0%,rgb(41,41,41) 47%,rgb(33,33,33) 100%);
+	background-image:-ms-linear-gradient(rgb(51,51,51) 0%,rgb(41,41,41) 47%,rgb(33,33,33) 100%);
+	background-image:linear-gradient(rgb(51,51,51) 0%,rgb(41,41,41) 47%,rgb(33,33,33) 100%);
+	-moz-box-shadow:0px 1px 2px rgba(0,0,0,0.25);
+	-webkit-box-shadow:0px 1px 2px rgba(0,0,0,0.25);
+	box-shadow:0px 1px 2px rgba(0,0,0,0.25);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff333333,endColorstr=#ff212121)
+		progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#40000000,Positive=true)";
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff333333,endColorstr=#ff212121)
+		progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#40000000,Positive=true);
+}
+
+.navbar-fixed-top .navbar-inner{
+    padding: 0 0 0 5px;
+}
+
+.navbar-fixed-top{
+    margin-left: 0px;
+    margin-right: 0px;
+    position: fixed !important;
+}
+
+.navbar-inner{
+	border-radius: 0;
+}
+
+.navbar .navbar-inner ul li a,
+.navbar .navbar-inner ul li a:focus{
+    font-family: Lobster;
+    font-size: 1.42857142857143em; /* 20px / 14px */
+	color: #FFCB15;
+	text-transform: lowercase;
+	padding: 25px 20px 5px;
+	border-right: 1px solid #000;
+	border-left: 1px solid #383838;
+	transition: color .4s;
+}
+
+.navbar .navbar-inner ul li.active a{
+    background: #171717;
+    border-left: 1px solid #000;
+	color: #FFCB15;    
+}
+
+.navbar .navbar-inner ul li a:hover,
+.navbar .navbar-inner ul li.active a:hover{
+	color: #FDEF40;    
+}
+
+.main{
+	position: relative;
+	width: 100%;
+}
+
+.main .container{
+	background-color: #FFF;
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+}
+
+.sidebar,
+.content{
+
+}
+
+.main .container .content{
+	border-left: 1px solid #DDD;
+}
+
+.main .container .content .title1{
+	padding: 0 10px;
+}
+
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px){
+	.main .container .content{
+		border-left: 0;
+	}
+	
+	.main .container .content .title1{
+		padding: 0;
+	}
+}
+
+table.agenda{
+	width: 100%;
+	background-color: #F2F2F2;
+	padding: 0 10px;
+}
+
+table.agenda tr td{
+	height: 50px;
+	font-size: 16px;
+}
+
+
+
+/* Large desktop */
+@media (min-width: 1200px){
+    
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px){
+    
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px){
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+}
