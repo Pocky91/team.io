@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>teamio</title>
   
-  <link rel="stylesheet" href="http://localhost/team.io/teamio/css/teamio/inhalt.css" type="text/css">
+  <link rel="stylesheet" href="teamio/css/teamio/inhalt.css" type="text/css">
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script src="http://localhost/team.io/teamio/js/bootstrap/bootstrap.min.js"></script>
