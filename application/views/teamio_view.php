@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="teamio/css/teamio/inhalt.css" type="text/css">
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script src="http://localhost/team.io/teamio/js/bootstrap/bootstrap.min.js"></script>
+  <script src="teamio/js/bootstrap/bootstrap.min.js"></script>
   
 </head>
 <body>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
       <a href="#" class="title">teamio</a>
