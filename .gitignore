@@ -36,6 +36,15 @@
 ehthumbs.db
 Thumbs.db
 
+# Visual Studio Project Files #
+######################
+*.vsphpignore
+*.cache
+*.phpproj
+*.puo
+*.sln
+*.suo
+
 # Other files #
 ######################
 htdocs/wp-config-local.php
